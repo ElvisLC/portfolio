@@ -1,22 +1,27 @@
+
 *{
     font-family: "Comfortaa", sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+body{
     background-color: #090c1a;
+
 }
 
 .navBar {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: #090c1a;
     color: white;
     padding: 20px 0;
     z-index: 1000;
     transition: box-shadow 0.3s ease-in-out;
     display: flex;
     justify-content: center;
-    gap: 7%;
+    gap: 5%;
 }
 
 .navBar a {
@@ -42,9 +47,10 @@ main {
     width: 100%;
 }
 
+
 .description{
 
-
+    
     text-align: center;
     align-items: center;
     padding-top: 6rem;
@@ -183,7 +189,6 @@ main {
 
     border-radius: 20px;
     padding: 1rem;
-
     text-align: center;
 }
 
@@ -248,6 +253,7 @@ main {
     gap: 5px;
     border-color: rgb(2 110 237 / 1);
     width: 10rem;
+    background-color: #090c1a;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -263,7 +269,11 @@ main {
 }
 
 .educationContainer h2{
- color: #f9f9f9;
+    color: #f9f9f9;
+    font-family: Besley, serif;
+    font-size: xx-large;
+    margin-bottom: 20px;
+
 }
 
 .childEducation{
@@ -287,25 +297,89 @@ main {
 
 .childEducation p{
     color:#f9f9f9;
+    margin: 10px 0;
 }
 
 .childEducation span{
     color: rgb(2 110 237 / 1);
 }
 
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.projects h2{
+    color: #f9f9f9;
+    font-family: Besley, serif;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projectCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #0e172e;
+    padding:3rem;
+    color:#f9f9f9;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.headerChild{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin: 1rem 0;
+}
+
+.headerChild img{
+    height: 4rem;
+    width: auto;    
+    border-radius: 10px;
+}
 
 
 
+.technologies{
+    display: flex;
+    gap: 7px;
+    justify-content: start;
+    margin: 1rem 0;
 
+}
 
+.technologies p{
+   background-color:  rgb(45 140 252 / 1);
+   color: #090c1a;
+   font-weight: 700;
+   font-family: "Poppins", sans-serif;
+   padding:3px;
+   border-radius: 10px;
 
+   font-size: 12px;
+   
+}
 
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
 
+.links img{
 
-
-
-
-
+    height: 35px;
+    width: auto;
+}
 
 
 
