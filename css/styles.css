@@ -304,11 +304,13 @@ main {
     color: rgb(2 110 237 / 1);
 }
 
+
+
 .projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 4rem;
 }
 .projects h2{
     color: #f9f9f9;
@@ -382,28 +384,96 @@ main {
 }
 
 
+.contactChild h2{
+    color: #f9f9f9;
+    font-family: Besley, serif;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactChild p{
+    color: #f9f9f9;
+    text-align: center;
+}
+
+
+
+.contactChild h3{
+    color: #f9f9f9;
+    font-family: Besley, serif;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.form input{
+    padding: 1rem;
+    caret-color: #FFFFFF; /* Cambia el color de la línea a blanco */
+
+}
+
+.form input,textarea{
+    background-color:#0e172e;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 0.5rem 0;
+}
+
+.form textarea{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho */
+    height: auto; /* Altura automática */
+    resize: vertical; /* Solo se puede redimensionar verticalmente */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    padding: 1rem; /* Agrega un padding para que el texto no se pegue al borde */
+}
 
 
 
 
 
+.formBtn{
+    background-color: rgb(45 140 252 / 1);
+    border: none;
+    padding: 1rem;
+    color: #f9f9f9;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
 
 
+.date{
+    color: #a5a6a7!important;
+}
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p{
+    font-family: Besley, serif;
+    color: #f9f9f9;
+    text-align: center;
+    font-size: 2rem;
+}
 
 
 
@@ -415,6 +485,23 @@ main {
     .gridCont {
       grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
+    .contact{
+        display: flex;
+        margin: auto;
+        
+    }
+    .contactChild{
+        width: 50%;
+    }
+    .contactChild p{
+        margin:6rem auto;
+        width: 80%;
+    }
+    .form{
+        width: 70%;
+        margin: auto;
+    }
+    
   }
 @media (min-width: 1024px) {
     .gridCont {
