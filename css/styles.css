@@ -57,7 +57,7 @@ main {
 
 }
 .shadow {
-    box-shadow: 0 0 .5em #00000080;
+    box-shadow: 0 0 .5em #0e172e;
     transition: box-shadow .25s;
 }
 
