@@ -466,6 +466,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     margin-top: 5rem;
+    padding: 2rem;
 }
 
 footer p{
