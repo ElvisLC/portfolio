@@ -35,6 +35,7 @@ form.addEventListener('submit', (e) => {
         errorCatcha.classList.remove('catchaError')
     }
   } else {
+    errorCatcha.classList.remove('catchaError')
     emailjs.send("elvisemail", "elvistemplate", {
       from_name: `${user.value}`,
       from_email: `${email.value}`,
@@ -74,4 +75,4 @@ form.addEventListener('submit', (e) => {
 
 
 
-  console.log('NEW FORM');
+
