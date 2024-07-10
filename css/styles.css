@@ -337,7 +337,7 @@ main {
 
 .technologies{
     display: flex;
-    gap: 7px;
+    gap: 10px;
     justify-content: center;
     margin: 1rem 0;
 
@@ -348,8 +348,8 @@ main {
    color: #090c1a;
    font-weight: 700;
    font-family: "Poppins", sans-serif;
-   padding:3px;
-   border-radius: 10px;
+   padding:5px 10px;
+   border-radius: 20px;
 
    font-size: 1.9rem
    
@@ -376,7 +376,7 @@ main {
 .contactChild h2{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     text-align: center;
 
@@ -530,10 +530,13 @@ footer p{
   }
 
   .g-recaptcha{
+    
     width: 100%;
     display: flex;
     justify-content: center;
-
+    transform: scale(1.5);
+    margin: auto;
+    padding:2rem 0 ;
     }
 
   
