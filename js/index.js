@@ -23,28 +23,29 @@ const alertM = document.querySelector('.alert');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
- // Obtener la respuesta del CAPTCHA
-    
-  if (!user.value || !email.value || !message.value ) {
+  const recaptchaResponse = grecaptcha.getResponse(); // Obtener la respuesta del CAPTCHA
+    const errorCatcha=document.querySelector('#catchaError')
+  if (!user.value || !email.value || !message.value || !recaptchaResponse) {
     if (!user.value) user.classList.add('error');
     if (!email.value) email.classList.add('error');
     if (!message.value) message.classList.add('error');
-
+    if (!recaptchaResponse) errorCatcha.classList.add('catchaError')
   } else {
     emailjs.send("elvisemail", "elvistemplate", {
       from_name: `${user.value}`,
       from_email: `${email.value}`,
       to_name: "Elvis",
       message: `${message.value}`,
-    })
-    alertM.classList.add('slideDown');
-    setTimeout(() => {
-      alertM.classList.remove('slideDown');
-      alertM.addEventListener('animationend', () => {
-        alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
-      });
-      alertM.classList.add('slideOut');
-    }, 3000);
+    }).then(() => {
+      alertM.classList.add('slideDown');
+      setTimeout(() => {
+        alertM.classList.remove('slideDown');
+        alertM.addEventListener('animationend', () => {
+          alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
+        });
+        alertM.classList.add('slideOut');
+      }, 3000);
+    });
   }
 });
 

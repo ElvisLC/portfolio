@@ -524,6 +524,16 @@ footer p{
     background-color: #0e172e;
     color: #f9f9f9;
   }
+
+  .g-recaptcha{
+    margin: auto;
+
+    }
+    .catchaError{
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: auto;
+    }
   
   .slideDown {
     animation: slideDown 0.5s ease-out forwards;
