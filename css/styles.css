@@ -308,7 +308,7 @@ main {
     width: 100%;
     color:#f9f9f9;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 2.9rem;
     padding: 1rem 1rem;
 }
 
@@ -324,7 +324,7 @@ main {
     align-items: center;
     gap: 5px;
     margin: 0.2rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .headerChild img{
@@ -351,7 +351,7 @@ main {
    padding:3px;
    border-radius: 10px;
 
-   font-size: 1.5rem
+   font-size: 1.9rem
    
 }
 
@@ -385,6 +385,8 @@ main {
 .contactChild p{
     color: #f9f9f9;
     text-align: center;
+    font-size: 2rem;
+
     margin-bottom: 2rem;
 }
 
@@ -476,7 +478,7 @@ footer p{
     font-family: Besley, serif;
     color: #f9f9f9;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .error {
     border: 1px solid red!important;
@@ -559,17 +561,101 @@ footer p{
 
 
 /* Mediaquery */
-@media (min-width: 900px) {
- 
-    
-  }
+
 @media (min-width: 1024px) {
+
+    .childMedia img{
+        height: 2rem;
+        width: auto;
+        margin: auto;
+    }
+    .media p{
+        margin-top:3rem;
+        font-size:10em;
+    }
+    
+    .mySkills h2{
+        font-size: xx-large;
+    }
+    .mySkills h3{
+        font-size: 1.5rem;
+    }
+
+    .childEducation p{
+        font-size: 1rem;
+    }
+    .childEducation h3{
+        font-size: 2rem;
+    }
+
+    .projects h2{
+        font-size: xx-large;
+    }
+
+    .projectCont{
+        max-width: 50%;
+        margin-top: 2rem;
+    }
+
+    .technologies p{
+        font-size: 1rem;
+    }
+    .headerChild h3{
+        font-size: 1.5rem;
+    }
+    .headerChild img{
+        height: 3rem;
+    }
+
+    .links img{
+        height: 2.5rem;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .childEducation img{
+       height: 4rem;
+       width: auto;
+    }
+
     .gridCont {
       grid-template-columns: repeat(4, minmax(200px, 1fr));
     }
     .itemContact{
         justify-content: center;
         flex-direction: row;
+    }
+    .navBar a {
+
+        
+        font-size:1.3rem;
+    }
+    .getBtn{
+
+
+        width: 10rem;
+
+        padding: 1rem;
+
+    }
+    
+    .getBtn img{
+        height: 2rem;
+        width: auto;  
+    }
+    
+    .getBtn span{
+       color: #f9f9f9;
+       font-size: 1rem;
+       margin-top: 0.5rem;
+    }
+    .description h1{
+        font-size: 2rem;        
+    }
+    .description p{
+        font-size: 1.5rem;        
     }
     
     .contact{
