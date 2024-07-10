@@ -38,7 +38,7 @@ body{
 
 main {
     padding-top: 3rem;
-    margin: 0 9% ;
+    margin: 0 10% ;
 }
 .about{
     
@@ -528,9 +528,9 @@ footer p{
   }
 
   .g-recaptcha{
-    margin: auto;
-    
-    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     }
     .catchaError{
