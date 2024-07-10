@@ -41,21 +41,19 @@ form.addEventListener('submit', (e) => {
       from_email: `${email.value}`,
       to_name: "Elvis",
       message: `${message.value}`,
-    }).then(() => {
-      alertM.classList.add('slideDown');
-      setTimeout(() => {
-        alertM.classList.remove('slideDown');
-        alertM.addEventListener('animationend', () => {
-          alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
-        });
-        alertM.classList.add('slideOut');
-        set
-      }, 3000);
-      setTimeout(() => {
-      window.location.reload()
-      }, 5000);
-    });
-    
+    })
+    alertM.classList.add('slideDown');
+    setTimeout(() => {
+      alertM.classList.remove('slideDown');
+      alertM.addEventListener('animationend', () => {
+        alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
+      });
+      alertM.classList.add('slideOut');
+      set
+    }, 3000);
+    setTimeout(() => {
+    window.location.reload()
+    }, 5000);
   }
 });
 
