@@ -512,10 +512,10 @@ footer p{
   .alert {
     overflow: hidden; /* Oculta el contenido del elemento hasta que se aplica la animación */
     position: fixed;
-    top: 10vh; /* Centra verticalmente */
+    top: 13vh; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%) translateY(-100%); /* Oculta el elemento fuera de la pantalla inicialmente */
-    opacity: 0; /* Oculta el elemento inicialmente */
+    opacity: 0;/* Oculta el elemento inicialmente */
   }
   
   .alertContainer {
@@ -533,12 +533,7 @@ footer p{
     justify-content: center;
 
     }
-    .catchaError{
-        border: 1px solid red;
-        border-radius: 5px;
-        margin: auto;
-        padding: 2rem;
-    }
+
   
   .slideDown {
     animation: slideDown 0.5s ease-out forwards;
@@ -549,6 +544,8 @@ footer p{
   }
   
   .alert img {
+    height: 5rem;
+    margin-top: 1rem;
     padding: 5px;
     border-radius: 10px;
     background-color: rgb(45 140 252 / 1);
@@ -556,6 +553,7 @@ footer p{
   
   .alert p {
     margin-top: 5px;
+    font-size: 2rem;
   }
   
 

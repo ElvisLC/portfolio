@@ -29,13 +29,8 @@ form.addEventListener('submit', (e) => {
     if (!user.value) user.classList.add('error');
     if (!email.value) email.classList.add('error');
     if (!message.value) message.classList.add('error');
-    if (!recaptchaResponse) {
-        errorCatcha.classList.add('catchaError')
-    }else{
-        errorCatcha.classList.remove('catchaError')
-    }
+    if (!recaptchaResponse) return 
   } else {
-    errorCatcha.classList.remove('catchaError')
     emailjs.send("elvisemail", "elvistemplate", {
       from_name: `${user.value}`,
       from_email: `${email.value}`,
