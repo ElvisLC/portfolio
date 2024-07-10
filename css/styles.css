@@ -29,7 +29,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     
-    font-size:2rem;
+    font-size:2.3rem;
 }
 
 .navBar a:hover{
@@ -64,14 +64,14 @@ main {
 
 .description p{
     color: #f9f9f9;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 20px;
     margin-bottom: 40px;
     
 }
 .description h1{
     color: #f9f9f9;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
  span{
@@ -101,7 +101,7 @@ main {
 
 .whoiam p{
     color: #f9f9f9;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .media{
@@ -376,7 +376,7 @@ main {
 .contactChild h2{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: xx-large;
+    font-size: 3rem;
     margin-bottom: 20px;
     text-align: center;
 
@@ -395,7 +395,7 @@ main {
 .contactChild h3{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     text-align: center;
 }
