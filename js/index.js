@@ -67,3 +67,7 @@ formBtn.addEventListener('submit', (e) => {
   message.addEventListener('blur', () => {
     if (!message.value) message.classList.add('error')
   });
+
+
+
+  console.log('NEW FORM');
