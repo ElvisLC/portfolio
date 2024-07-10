@@ -101,7 +101,7 @@ main {
 
 .whoiam p{
     color: #f9f9f9;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .media{
@@ -385,7 +385,7 @@ main {
 .contactChild p{
     color: #f9f9f9;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 
     margin-bottom: 2rem;
 }
