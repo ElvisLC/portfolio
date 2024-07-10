@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
+console.log('NEW FORM');
 
 
 // send the message and get a callback with an error or details of the message that was sent
