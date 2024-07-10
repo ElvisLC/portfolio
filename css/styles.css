@@ -420,10 +420,26 @@ main {
 
 }
 
+.error {
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+  
+  input.error {
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+  
+  textarea.error {
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+
 .form input,textarea{
     background-color:#0e172e;
     border: none;
     border-radius: 10px;
+    color: #f9f9f9;
     outline: none;
     margin: 0.5rem 0;
 }
@@ -476,9 +492,59 @@ footer p{
     font-size: 2rem;
 }
 
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%) translateX(-40%);
+    }
+    100% {
+      transform: translateY(0) translateX(-40%);
+    }
+  }
+  @keyframes slideOut {
+    0% {
+      transform: translateY(0) translateX(-40%);
+    }
+    100% {
+      transform: translateY(-100%) translateX(-40%);
+    }
+  }
+  
+  .alert {
+    overflow: hidden; /* Oculta el contenido del elemento hasta que se aplica la animación */
+    position: fixed;
+    top: 10vh; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para centrar */
+    transform: translateX(-50%) translateY(-100%); /* Oculta el elemento fuera de la pantalla inicialmente */
 
+  }
+  
+  .alertContainer {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #0e172e;
+    color: #f9f9f9;
+  }
+  
+  .slideDown {
+    animation: slideDown 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .slideOut {
+    animation: slideOut 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+.alert img{
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(45 140 252 / 1);
+}
 
-
+.alert p{
+    margin-top: 5px;
+}
 
 
 /* Mediaquery */

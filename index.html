@@ -14,9 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+        
 </head>
 <body>
+    
     <header>
         <nav class="navBar">
             <a href="#about">About</a>
@@ -27,6 +28,19 @@
         </nav>
     </header>
     <main>
+        
+        <div class="alert">
+            <div class="alertContainer">
+                <div>
+                    <img src="assets/success.svg" alt="">
+                </div>
+                <div>
+                    <p>Success</p>
+                    <p>Message sent successfully!</p>
+                </div>
+            </div>
+            
+        </div>
         <section class="about">               
             <div class="bio">
             <div class="description">
@@ -196,20 +210,16 @@
                     <h3>Send me a message</h3>
 
 
-                        <input placeholder="Name" type="text">
+                        <input id="name" placeholder="Name" type="text">
         
 
-
-                        <input placeholder="Company" type="text">
-    
-
                  
-                        <input placeholder="E-mail" type="email">
+                        <input id="email" placeholder="E-mail" type="email">
      
 
 
                    
-                        <textarea placeholder="Message"></textarea>
+                        <textarea id="message" placeholder="Message"></textarea>
                     
 
                     <button class="formBtn" type="submit">
@@ -228,6 +238,17 @@
         
    
     </main>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "aYM-J9ALmfb1A0GIs",
+  });
+})();
+</script>
     <script src="/js/index.js"></script>
 </body>
 </html>
