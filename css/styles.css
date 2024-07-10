@@ -38,7 +38,7 @@ body{
 
 main {
     padding-top: 3rem;
-    margin: 0 10% ;
+    margin: 0 9% ;
 }
 .about{
     
@@ -64,14 +64,14 @@ main {
 
 .description p{
     color: #f9f9f9;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 40px;
     
 }
 .description h1{
     color: #f9f9f9;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
  span{
@@ -406,7 +406,7 @@ main {
 }
 
 .form ::placeholder{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -416,6 +416,7 @@ main {
     border-radius: 10px;
     outline: none;
     color: #f9f9f9;
+    font-size: 2rem;
     margin: 0.5rem 0;
 }
 
@@ -522,6 +523,7 @@ footer p{
 
   .g-recaptcha{
     margin: auto;
+    
     padding: 2rem;
 
     }
