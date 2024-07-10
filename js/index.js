@@ -14,17 +14,21 @@ console.log('NEW FORM');
 
 
 // send the message and get a callback with an error or details of the message that was sent
-const formBtn = document.querySelector('.form');
+const form = document.querySelector('.form');
 const user = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const alertM = document.querySelector('.alert');
 
-formBtn.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const recaptchaResponse = grecaptcha.getResponse(); // Obtener la respuesta del CAPTCHA
-
+  if (!recaptchaResponse) {
+    const captchaError = document.querySelector('.captcha-error');
+    captchaError.textContent = 'Por favor, completa el CAPTCHA';
+    captchaError.classList.add('error');
+  }
   if (!user.value || !email.value || !message.value || !recaptchaResponse) {
     if (!user.value) user.classList.add('error');
     if (!email.value) email.classList.add('error');

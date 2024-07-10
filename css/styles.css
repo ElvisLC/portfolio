@@ -478,6 +478,8 @@ footer p{
 }
 .error {
     border: 1px solid red!important;
+    color: red!important;
+
 }
 
 .error :input {
