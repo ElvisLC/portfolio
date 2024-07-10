@@ -94,7 +94,7 @@ main {
 .whoiam h2{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: xx-large;
+    font-size: 4rem;
     margin-bottom: 20px;
     
 }
@@ -251,7 +251,7 @@ main {
 .educationContainer h2{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: xx-large;
+    font-size: 4rem;
     margin-bottom: 20px;
 
 }
@@ -295,7 +295,7 @@ main {
 .projects h2{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size:3rem;
+    font-size:4rem;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -309,7 +309,7 @@ main {
     color:#f9f9f9;
     border-radius: 10px;
     font-size: 2.9rem;
-    padding: 1rem 1rem;
+    padding:2rem ;
 }
 
 .projectBody{
@@ -322,7 +322,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 1rem;
     margin: 0.2rem 0;
     font-size: 3rem;
 }
@@ -414,7 +414,7 @@ main {
 }
 
 .form ::placeholder{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 
 
@@ -454,7 +454,7 @@ main {
     margin-top: 0.5rem;
     cursor: pointer;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
