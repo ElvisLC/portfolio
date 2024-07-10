@@ -23,13 +23,12 @@ const alertM = document.querySelector('.alert');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const recaptchaResponse = grecaptcha.getResponse(); // Obtener la respuesta del CAPTCHA
- 
-  if (!user.value || !email.value || !message.value || !recaptchaResponse) {
+ // Obtener la respuesta del CAPTCHA
+    
+  if (!user.value || !email.value || !message.value ) {
     if (!user.value) user.classList.add('error');
     if (!email.value) email.classList.add('error');
     if (!message.value) message.classList.add('error');
-    console.log('ERROR');
 
   } else {
     emailjs.send("elvisemail", "elvistemplate", {
@@ -37,16 +36,15 @@ form.addEventListener('submit', (e) => {
       from_email: `${email.value}`,
       to_name: "Elvis",
       message: `${message.value}`,
-    }).then(() => {
-      alertM.classList.add('slideDown');
-      setTimeout(() => {
-        alertM.classList.remove('slideDown');
-        alertM.addEventListener('animationend', () => {
-          alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
-        });
-        alertM.classList.add('slideOut');
-      }, 3000);
-    });
+    })
+    alertM.classList.add('slideDown');
+    setTimeout(() => {
+      alertM.classList.remove('slideDown');
+      alertM.addEventListener('animationend', () => {
+        alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
+      });
+      alertM.classList.add('slideOut');
+    }, 3000);
   }
 });
 
