@@ -20,15 +20,18 @@ const user=document.querySelector('#name')
 const email=document.querySelector('#email')
 const message=document.querySelector('#message')
 const alertM=document.querySelector('.alert')
+const recaptchaResponse = grecaptcha.getResponse();
 formBtn.addEventListener('submit', (e) => {
     e.preventDefault()
     if (!user.value ||!email.value ||!message.value) {
         if (!user.value) user.classList.add('error')
         if (!email.value) email.classList.add('error')
         if (!message.value) message.classList.add('error')
+        if (!recaptchaResponse) alert('Por favor, completa el CAPTCHA');
     //   alert('Todos los campos son obligatorios')
    
     } else {
+        
       emailjs.send("elvisemail", "elvistemplate", {
         from_name: `${user.value}`,
         from_email: `${email.value}`,

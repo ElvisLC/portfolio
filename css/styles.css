@@ -420,27 +420,12 @@ main {
 
 }
 
-.error {
-    border: 1px solid red;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-  }
-  
-  input.error {
-    border: 1px solid red;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-  }
-  
-  textarea.error {
-    border: 1px solid red;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-  }
-
 .form input,textarea{
     background-color:#0e172e;
     border: none;
     border-radius: 10px;
-    color: #f9f9f9;
     outline: none;
+    color: #f9f9f9;
     margin: 0.5rem 0;
 }
 
@@ -491,21 +476,33 @@ footer p{
     text-align: center;
     font-size: 2rem;
 }
+.error {
+    border: 1px solid red!important;
+}
 
+.error :input {
+    border: 1px solid red!important;
+    color: red!important;
+}
 @keyframes slideDown {
     0% {
       transform: translateY(-100%) translateX(-40%);
+      opacity: 0;
     }
     100% {
       transform: translateY(0) translateX(-40%);
+      opacity: 1;
     }
   }
+  
   @keyframes slideOut {
     0% {
       transform: translateY(0) translateX(-40%);
+      opacity: 1;
     }
     100% {
       transform: translateY(-100%) translateX(-40%);
+      opacity: 0;
     }
   }
   
@@ -514,9 +511,8 @@ footer p{
     position: fixed;
     top: 10vh; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajusta la posición para centrar */
     transform: translateX(-50%) translateY(-100%); /* Oculta el elemento fuera de la pantalla inicialmente */
-
+    opacity: 0; /* Oculta el elemento inicialmente */
   }
   
   .alertContainer {
@@ -529,22 +525,23 @@ footer p{
   }
   
   .slideDown {
-    animation: slideDown 0.5s ease-out;
-    animation-fill-mode: forwards;
+    animation: slideDown 0.5s ease-out forwards;
   }
+  
   .slideOut {
-    animation: slideOut 0.5s ease-out;
-    animation-fill-mode: forwards;
+    animation: slideOut 0.5s ease-out forwards;
   }
-.alert img{
-    padding:5px;
+  
+  .alert img {
+    padding: 5px;
     border-radius: 10px;
     background-color: rgb(45 140 252 / 1);
-}
-
-.alert p{
+  }
+  
+  .alert p {
     margin-top: 5px;
-}
+  }
+  
 
 
 /* Mediaquery */
