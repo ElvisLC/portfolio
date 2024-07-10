@@ -21,6 +21,9 @@ const email=document.querySelector('#email')
 const message=document.querySelector('#message')
 const alertM=document.querySelector('.alert')
 const recaptchaResponse = grecaptcha.getResponse();
+console.log(recaptchaResponse);
+
+
 formBtn.addEventListener('submit', (e) => {
     e.preventDefault()
     if (!user.value ||!email.value ||!message.value) {
