@@ -24,16 +24,13 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const recaptchaResponse = grecaptcha.getResponse(); // Obtener la respuesta del CAPTCHA
-  if (!recaptchaResponse) {
-    const captchaError = document.querySelector('.captcha-error');
-    captchaError.textContent = 'Por favor, completa el CAPTCHA';
-    captchaError.classList.add('error');
-  }
+ 
   if (!user.value || !email.value || !message.value || !recaptchaResponse) {
     if (!user.value) user.classList.add('error');
     if (!email.value) email.classList.add('error');
     if (!message.value) message.classList.add('error');
-    if (!recaptchaResponse) alert('Por favor, completa el CAPTCHA');
+    console.log('ERROR');
+
   } else {
     emailjs.send("elvisemail", "elvistemplate", {
       from_name: `${user.value}`,
