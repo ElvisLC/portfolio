@@ -49,8 +49,13 @@ form.addEventListener('submit', (e) => {
           alertM.remove(); /* Elimina el elemento cuando termina la animación de salida */
         });
         alertM.classList.add('slideOut');
+        set
       }, 3000);
+      setTimeout(() => {
+      window.location.reload()
+      }, 5000);
     });
+    
   }
 });
 
