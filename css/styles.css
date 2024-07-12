@@ -61,6 +61,31 @@ main {
     transition: box-shadow .25s;
 }
 
+/* flags */
+.flags__container{
+    position: absolute;
+}
+
+.flags{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+
+.flags__item{
+    cursor: pointer;
+    width: 6'px;
+}
+
+.flags__item img{
+    height: 5rem;
+    width: auto;
+    border-radius: 10px;
+}
 
 .description p{
     color: #f9f9f9;

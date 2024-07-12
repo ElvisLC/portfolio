@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta charset="UTF-8">
@@ -21,10 +21,10 @@
     
     <header>
         <nav class="navBar">
-            <a href="#mySkills">Habilidades</a>
-            <a href="#education">Educación</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#mySkills" data-translate="skills">Habilidades</a>
+            <a href="#education" data-translate="education">Educación</a>
+            <a href="#projects" data-translate="projects">Proyectos</a>
+            <a href="#contact" data-translate="contact">Contacto</a>
         </nav>
     </header>
     <main>
@@ -35,30 +35,46 @@
                     <img src="assets/success.svg" alt="">
                 </div>
                 <div>
-                    <p>Enviado</p> 
-                    <p>Su mensaje ha sido enviado con éxito.</p>
+                    <p data-translate="sent">Enviado</p> 
+                    <p data-translate="success_message">Su mensaje ha sido enviado con éxito.</p>
                 </div>
             </div>
             
         </div>
-        <section id="about" class="about">               
+        
+        <div class="flags__container">
+            
+        <div class="flags">
+            <div class="flags__item" data-language="us">
+                <img src="/assets/us.svg" alt="">
+            </div>
+            <div class="flags__item" data-language="es">
+                <img src="/assets/es.svg" alt="">
+            </div>
+
+        </div>    
+        </div>
+
+
+        <section id="about" class="about">    
+           
             <div class="bio">
             <div class="description">
-                <h1>
+                <h1 data-translate="about_description">
                     SOY <span>Elvis</span>, DESARROLLADOR WEB FULL-STACK 
                 </h1>
-                <p> <span>Transformando</span> ideas en realidad, una línea de código a la vez. ¡Vamos a <span>colaborar</span> y crecer juntos! </p>
+                <p data-translate="transforming" > <span>Transformando</span> ideas en realidad, una línea de código a la vez. ¡Vamos a <span>colaborar</span> y crecer juntos! </p>
                 <div class="get">
                         <a href="mailto:elvislacruz22@gmail.com?subject=Full-stack%20Web%20Developer" >
                             <button class="getBtn">
                                 <img src="assets/email.svg" alt="">
-                                <span href="">Correo</span>
+                                <span data-translate="email"  href="">Correo</span>
                             </button>
                         </a>
                         <a target="_blank" href="https://drive.google.com/file/d/1fUkTnaCbHtDuyr2H9X-5wflGISwW44CH/view?usp=sharing">
                             <button class="getBtn">
                                 <img src="assets/download.svg" alt="">
-                                <span href="">Descargar</span>
+                                <span data-translate="download" href="">Descargar</span>
                             </button>
                         </a>
                      
@@ -87,16 +103,16 @@
 
         <section class="whoiam">
             <div class="aboutMe">
-                <h2>
+                <h2 data-translate="about_me_title">
                     Acerca de mí
                 </h2>
-                <p> Un apasionado <span>desarrollador junior</span> con un año de experiencia en <span>desarrollo web</span>. Me especializo en construir aplicaciones web utilizando tecnologías como <span>Node.js</span>, <span>MongoDB</span>, <span>Express</span> y <span>Tailwind</span>. Soy un aprendiz rápido y un jugador de equipo, siempre buscando mejorar mis habilidades y aprender nuevas tecnologías para entregar <span>soluciones innovadoras y eficientes</span>. Mi objetivo es seguir creciendo como desarrollador y contribuir a proyectos que hagan una diferencia en la vida de las personas. </p>
+                <p data-translate="about_me_description"> Un apasionado <span>desarrollador junior</span> con un año de experiencia en <span>desarrollo web</span>. Me especializo en construir aplicaciones web utilizando tecnologías como <span>Node.js</span>, <span>MongoDB</span>, <span>Express</span> y <span>Tailwind</span>. Soy un aprendiz rápido y un jugador de equipo, siempre buscando mejorar mis habilidades y aprender nuevas tecnologías para entregar <span>soluciones innovadoras y eficientes</span>. Mi objetivo es seguir creciendo como desarrollador y contribuir a proyectos que hagan una diferencia en la vida de las personas. </p>
             </div>
         </section>
 
         <section id="mySkills" class="mySkills">
             <div class="skills">
-                <h2>Tecnologías</h2>
+                <h2 data-translate="technologies">Tecnologías</h2>
                 <div class="gridCont">
                     <div class="gridChild">
                         <img src="assets/javascriptIcon.png"  alt="">
@@ -122,7 +138,7 @@
 
             <section id="education" class="education">
                 <div class="educationContainer">
-                    <h2>
+                    <h2 data-translate="education_title">
                         Educacion
                     </h2>
                     <div class="childEducation">
@@ -131,11 +147,11 @@
                         </div>
                         <div>
     
-                            <p class="date">2023-En curso</p>
-                            <h3>
+                            <p class="date" data-translate="education_1_year">2023-En curso</p>
+                            <h3 >
                                 -Instituto Universitario Jesus Obrero
                             </h3>
-                            <p> Tecnico superior en <span>Informatica</span></p>
+                            <p data-translate="education_1_description"> Tecnico superior en <span>Informatica</span></p>
                         </div>
                     </div>
                     <div class="childEducation">
@@ -148,7 +164,7 @@
                                 <h3>
                                     -ED TECNICA
                                 </h3>
-                                <p>
+                                <p data-translate="education_2_description">
                                     Desarrollador web <span>FULL-STACK</span>
                                 </p>
                             </div>
@@ -157,13 +173,13 @@
             </section>
     
             <section id="projects" class="projects">
-                <h2>Mis proyectos</h2>
+                <h2 data-translate="projects_title">Mis proyectos</h2>
      
                     <div class="projectCont">
                        
                             <div class="headerChild">
                                 <img src="assets/logo.jpeg" alt="">
-                                <h3>Lavanderia App</h3>
+                                <h3 data-translate="project_1">Lavanderia App</h3>
                             </div>
     
                             <div class="technologies">
@@ -173,7 +189,7 @@
                             </div>
     
                             <div class="projectBody">
-                                <p> Desarrollé una aplicación web completa para una lavandería, utilizando tecnologías y herramientas de vanguardia como <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>MongoDB</span>, <span>Tailwind</span>, <span>Express</span>, <span>Mongoose</span> y <span>Ruta</span>. Esta aplicación permite a los clientes reservar <span>máquinas de lavado</span> y <span>secadoras</span>, ver sus <span>reservas</span>, así como su <span>historial de pagos</span>. </p>
+                                <p data-translate="project_1_description"> Desarrollé una aplicación web completa para una lavandería, utilizando tecnologías y herramientas de vanguardia como <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>MongoDB</span>, <span>Tailwind</span>, <span>Express</span>, <span>Mongoose</span> y <span>Ruta</span>. Esta aplicación permite a los clientes reservar <span>máquinas de lavado</span> y <span>secadoras</span>, ver sus <span>reservas</span>, así como su <span>historial de pagos</span>. </p>
                                 
                             </div>
     
@@ -193,35 +209,35 @@
 
        
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact">w
             <div class="contactChild headContact">
-                <h2>¡Vamos a ponernos en contacto!</h2>
-                <p>
+                <h2 data-translate="get_in_touch">¡Vamos a ponernos en contacto!</h2>
+                <p data-translate="contact_description">
                     ¿Estás buscando un <span>desarrollador web</span> <span>full-stack</span> dedicado y <span>habilidoso</span> para llevar tu <span>proyecto</span> a la vida?. ¡Vamos a <span>conectarnos</span> y explorar cómo podemos crear algo <span>increíble</span> juntos!
                 </p>
             </div>
             <div class="contactChild">
                 <form class="form" onsubmit="return false;">
-                    <h3>Envíame un mensaje</h3>
+                    <h3 data-translate="send_message">Envíame un mensaje</h3>
 
 
-                        <input id="name" placeholder="Nombre" type="text">
+                        <input id="name" data-translate="name_placeholder" placeholder="Nombre" type="text">
         
 
                  
-                        <input id="email" placeholder="Correo" type="email">
+                        <input id="email" data-translate="email_placeholder" placeholder="Correo" type="email">
      
 
 
                    
-                        <textarea id="message" placeholder="Mensaje"></textarea>
+                        <textarea id="message" data-translate="message_placeholder" placeholder="Mensaje"></textarea>
 
 
                         <div id="catchaError" class="g-recaptcha" data-sitekey="6LeBawwqAAAAAD3ixi1w-19s0UmaHvLab7NMFUBR"></div>
                         
                         <div class="captcha-error"></div>
 
-                    <button class="formBtn" type="submit">
+                    <button data-translate="send" class="formBtn" type="submit">
                         Enviar
                     </button>
                 </form>
@@ -229,7 +245,7 @@
         </section>
 
         <footer>
-            <p>
+            <p data-translate="thank_you">
                 !Gracias por visitar mi portafolio!
             </p>
 
