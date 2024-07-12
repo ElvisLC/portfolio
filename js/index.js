@@ -72,8 +72,7 @@ form.addEventListener('submit', (e) => {
   });
 
 
-
-//flags
+//flagsz
 
 const flagsElement=document.querySelector('.flags')
 const textsToChange=document.querySelectorAll('[data-translate]')
@@ -85,11 +84,32 @@ const changeLanguage= async language=>{
     const translate=textToChange.dataset.translate
     
     textToChange.innerHTML=texts[translate]
+    textToChange.setAttribute('placeholder',texts[translate])
+
   }
-  console.log(texts);
+
 
 
 }
+
+const flagEs=document.querySelector('#spanish')
+const flagUs=document.querySelector('#english')
+
 flagsElement.addEventListener('click',(e)=>{
   changeLanguage(e.target.parentElement.dataset.language);
+  const hideFlag=e.target.parentElement.dataset.language
+
+  if(hideFlag=='us'){
+    console.log('english');
+    flagEs.classList.remove('hidden')
+    flagUs.classList.add('hidden')
+
+
+  }
+  else if(hideFlag=='es'){
+    flagEs.classList.add('hidden')
+    flagUs.classList.remove('hidden')
+    
+  }
+
 })

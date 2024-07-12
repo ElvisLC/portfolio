@@ -45,10 +45,10 @@
         <div class="flags__container">
             
         <div class="flags">
-            <div class="flags__item" data-language="us">
+            <div class="flags__item" data-language="us" id="english">
                 <img src="/assets/us.svg" alt="">
             </div>
-            <div class="flags__item" data-language="es">
+            <div class="flags__item hidden" data-language="es" id="spanish">
                 <img src="/assets/es.svg" alt="">
             </div>
 
@@ -230,7 +230,7 @@
 
 
                    
-                        <textarea id="message" data-translate="message_placeholder" placeholder="Mensaje"></textarea>
+                        <input type="text" id="message" data-translate="message_placeholder" placeholder="Mensaje"></input>
 
 
                         <div id="catchaError" class="g-recaptcha" data-sitekey="6LeBawwqAAAAAD3ixi1w-19s0UmaHvLab7NMFUBR"></div>

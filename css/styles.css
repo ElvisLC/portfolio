@@ -74,7 +74,9 @@ main {
     gap: 1rem;
     
 }
-
+  .hidden {
+    display: none;
+  }
 
 .flags__item{
     cursor: pointer;
