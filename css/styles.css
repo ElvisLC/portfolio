@@ -62,13 +62,11 @@ main {
 }
 
 /* flags */
-.flags__container{
-    position: absolute;
-}
 
 .flags{
     position: relative;
-    top: 2rem;
+    left: 0;
+    
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -595,6 +593,12 @@ footer p{
 @media (min-width: 1024px) {
 
     
+.flags__item img{
+    height: 3rem;
+    width: auto;
+    border-radius: 10px;
+}
+
     .g-recaptcha{
 
     transform: scale(1.2);
