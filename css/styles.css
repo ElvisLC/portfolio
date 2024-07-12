@@ -591,6 +591,35 @@ footer p{
 /* Mediaquery */
 
 @media (min-width: 1024px) {
+    .alert img {
+        height: 3rem;
+        margin-top: 0.5rem;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgb(45 140 252 / 1);
+      }
+      
+      .alert p {
+        margin-top: 0.8rem;
+        font-size: 1rem;
+      }
+    .alertContainer {
+        display: flex;
+        gap: 10px;
+        padding: 0.5rem;
+        border-radius: 10px;
+        background-color: #0e172e;
+        color: #f9f9f9;
+      }
+    
+    .alert {
+        overflow: hidden; /* Oculta el contenido del elemento hasta que se aplica la animación */
+        position: fixed;
+        top: 20vh; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%) translateY(-100%); /* Oculta el elemento fuera de la pantalla inicialmente */
+        opacity: 0;/* Oculta el elemento inicialmente */
+      }
     .shadow {
         box-shadow: 0 0.2rem 1em #0e172e;
         transition: box-shadow .25s;
