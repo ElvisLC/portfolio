@@ -591,10 +591,20 @@ footer p{
 /* Mediaquery */
 
 @media (min-width: 1024px) {
-
+    .shadow {
+        box-shadow: 0 0.2rem 1em #0e172e;
+        transition: box-shadow .25s;
+    }
     
+    .navBar {
+
+        padding: 1.2rem !important;
+        border-radius: 20px;
+   
+    }
+
 .flags__item img{
-    height: 3rem;
+    height: 2rem;
     width: auto;
     border-radius: 10px;
 }
