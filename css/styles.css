@@ -31,13 +31,15 @@ body{
   /* The sidepanel links */
   .sidepanel a {
     margin: 2rem;
-    text-decoration: none;
+
     font-size: 2.6rem;
     text-align: center;
     color: #f9f9f9;
     display: block;
-    transition: 0.3s;
+    outline: none;
+    
   }
+
 
   .language{
     font-size: 2.1rem;
