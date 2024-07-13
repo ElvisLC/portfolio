@@ -10,31 +10,72 @@ body{
 
 }
 
-.navBar {
-    position: fixed;
+
+
+
+  .sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
     top: 0;
-    width: 100%;
+    padding-top: 2rem;
+    right: 0;
     background-color: #090c1a;
-    color: white;
-    padding: 1.9rem 0;
-    z-index: 1000;
-    transition: box-shadow 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    gap:3%;
-}
-
-.navBar a {
-    color: #a5a6a7;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    margin: 2rem;
     text-decoration: none;
-    font-weight: bold;
-    
-    font-size:2.3rem;
-}
-
-.navBar a:hover{
+    font-size: 2rem;
+    text-align: center;
     color: #f9f9f9;
-}
+    display: block;
+    transition: 0.3s;
+  }
+
+  .language{
+    font-size: 2rem;
+    text-align: center;
+    color: #f9f9f9;
+    margin: 1rem 0;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    font-size: 36px;
+    margin-right: 1rem;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    float: right;
+    padding: 1.7rem;
+    background-color: #090c1a;
+    top: -10px;
+    box-shadow: 0 1rem 2em #0e172e;
+    transition: box-shadow .25s;
+    right: 0;
+  }
+  
 
 main {
     padding-top: 1rem;
@@ -58,8 +99,13 @@ main {
 }
 .shadow {
     box-shadow: 0 0.5rem 2em #0e172e;
-    transition: box-shadow .25s;
+    transition: box-shadow 0.25s;
 }
+
+.shadow:hover{
+    box-shadow: none
+}
+
 
 /* flags */
 
@@ -586,7 +632,6 @@ footer p{
     font-size: 2rem;
   }
   
-
 
 /* Mediaquery */
 

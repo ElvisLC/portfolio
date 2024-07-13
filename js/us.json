@@ -15,6 +15,7 @@
       "follow_github": "Follow me on Github",
       "follow_instagram": "Follow me on Instagram",
       "about_me_title": "About me",
+      "language":"es/<span>en</span>",
       "about_me_description": "A passionate <span>junior developer</span> with a year of experience in <span>web development</span>. I specialize in building web applications using technologies such as <span>Node.js</span>, <span>MongoDB</span>, <span>Express</span>, and <span>Tailwind</span>. I'm a quick learner and a team player, always looking to improve my skills and learn new technologies to deliver <span>innovative and efficient solutions</span>. My goal is to continue growing as a developer and contribute to projects that make a difference in people's lives.",
       "technologies": "Skills",
       "education_title": "Education",

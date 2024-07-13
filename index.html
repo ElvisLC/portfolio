@@ -20,23 +20,52 @@
 <body>
     
     <header>
-        <nav class="navBar">
-            <a href="#mySkills" data-translate="skills">Habilidades</a>
-            <a href="#education" data-translate="education">Educación</a>
-            <a href="#projects" data-translate="projects">Proyectos</a>
-            <a href="#contact" data-translate="contact">Contacto</a>
-            <div class="flags__container">
+        <nav class="sidebar" id="mySidebar">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="60px" height="60px" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
+                </a>
+                <a href="#mySkills" data-translate="skills">Habilidades</a>
+                <a href="#education" data-translate="education">Educación</a>
+                <a href="#projects" data-translate="projects">Proyectos</a>
+                <a href="#contact" data-translate="contact">Contacto</a>
+                <p data-translate="language" class="language">
+                    <span>es</span>/en
+                </p>
+                <div class="flags__container">
+               
+                    <div class="flags">
+                   
+                        <div class="flags__item" data-language="us" id="english">
+                            <img src="/assets/us.svg" alt="">
+                        </div>
+                        <div class="flags__item hidden" data-language="es" id="spanish">
+                            <img src="/assets/es.svg" alt="">
+                        </div>
             
-                <div class="flags">
-                    <div class="flags__item" data-language="us" id="english">
-                        <img src="/assets/us.svg" alt="">
-                    </div>
-                    <div class="flags__item hidden" data-language="es" id="spanish">
-                        <img src="/assets/es.svg" alt="">
-                    </div>
+                    </div>   
+              </div>
+              
+          
+
         
-                </div>    
+ 
                 </div>
+      
+                <a class="openbtn" >
+                
+                    <svg  onclick="openNav()" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60px" height="60px" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </a>
+            
+
         </nav>
     </header>
     <main>
