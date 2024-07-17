@@ -467,7 +467,7 @@ main {
 .contactChild h3{
     color: #f9f9f9;
     font-family: Besley, serif;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -606,9 +606,9 @@ footer p{
     width: 100%;
     display: flex;
     justify-content: center;
-    transform: scale(1.5);
+    transform: scale(2.3);
     margin: auto;
-    padding:2rem 0 ;
+    padding:4rem 0 ;
     }
 
   
