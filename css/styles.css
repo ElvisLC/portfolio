@@ -728,7 +728,7 @@ footer p{
         top: 12vh; /* Centra verticalmente */
         left: 50%; /* Centra horizontalmente */
         transform: translateX(-50%) translateY(-100%); /* Oculta el elemento fuera de la pantalla inicialmente */
-        opacity: 1;/* Oculta el elemento inicialmente */
+        opacity: 0;/* Oculta el elemento inicialmente */
       }
     .shadow {
         box-shadow: 0 0.2rem 1em #0e172e;
