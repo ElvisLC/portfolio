@@ -600,15 +600,15 @@ footer p{
     background-color: #0e172e;
     color: #f9f9f9;
   }
-
   .g-recaptcha{
-    
-    width: 100%;
     display: flex;
     justify-content: center;
-    transform: scaleY(2);
-    margin: auto;
-    padding:4rem 0 ;
+    transform: scale(1.7);
+  }
+  .g-recaptcha > :first-child{
+    height: 80%;
+    width: auto;
+    padding: 1.3rem;
     }
 
   
