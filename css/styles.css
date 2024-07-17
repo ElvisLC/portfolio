@@ -606,7 +606,7 @@ footer p{
     width: 100%;
     display: flex;
     justify-content: center;
-    transform: scale(2.3);
+    transform: scale(2);
     margin: auto;
     padding:4rem 0 ;
     }
