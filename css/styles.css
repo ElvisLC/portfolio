@@ -603,7 +603,7 @@ footer p{
   .g-recaptcha{
     display: flex;
     justify-content: center;
-    transform: scale(1.7);
+  
   }
   .g-recaptcha > :first-child{
     height: 80%;
