@@ -173,7 +173,7 @@ main {
 
 .whoiam p{
     color: #f9f9f9;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .media{
@@ -399,13 +399,11 @@ main {
     font-size: 3rem;
 }
 
-.headerChild img{
-    height: 7rem;
-    width: auto;    
-    border-radius: 10px;
+.showImg img{
+    height:30rem;
+    width: 100%;
+    border-radius: 20px;
 }
-
-
 
 .technologies{
     display: flex;
@@ -415,15 +413,10 @@ main {
 
 }
 
-.technologies p{
-   background-color:  rgb(45 140 252 / 1);
-   color: #090c1a;
-   font-weight: 700;
-   font-family: "Poppins", sans-serif;
-   padding:5px 10px;
-   border-radius: 20px;
+.technologies img{ 
+    width: 10%;
 
-   font-size: 1.9rem
+    border-radius: 50%
    
 }
 
@@ -930,4 +923,6 @@ footer p{
     }
   }
   
+  
+
   
