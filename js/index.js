@@ -77,7 +77,7 @@ form.addEventListener('submit', (e) => {
 const flagsElement=document.querySelector('.flags')
 const textsToChange=document.querySelectorAll('[data-translate]')
 const changeLanguage= async language=>{
-  const requestJson=await fetch(`../js/${language}.json`)
+  const requestJson=await fetch(`js/${language}.json`)
   const texts=await requestJson.json()
 
   for(let textToChange of textsToChange){
