@@ -597,7 +597,7 @@ footer p{
   .g-recaptcha{
     display: flex;
     justify-content: center;
-    transform: scale(2,1.5);
+    transform: scale(2);
   }
   .g-recaptcha > :first-child{
     height: 80%;
