@@ -42,7 +42,7 @@ export function ContactSection() {
           <GlowButton
             variant="primary"
             size="lg"
-            onClick={() => window.open("mailto:contact@elvislacruz.dev", "_blank")}
+            onClick={() => window.open("mailto:contact@elvislacruz22@gmail.com", "_blank")}
             className="inline-flex items-center gap-2 group"
           >
             <Mail size={20} />
