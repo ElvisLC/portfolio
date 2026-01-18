@@ -62,6 +62,9 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.description": "Siempre estoy interesado en escuchar sobre nuevas oportunidades y proyectos interesantes. ¡No dudes en contactarme!",
     "contact.sendEmail": "Envíame un Email",
 
+    //Footer 
+    "footer.rights" : "Todos los derechos reservados.",
+
   },
   en: {
     // Navbar
