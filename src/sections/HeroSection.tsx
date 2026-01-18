@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { GlowButton } from "@/components/ui/GlowButton";
-import { ChevronDown, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export function HeroSection() {
@@ -50,7 +50,7 @@ export function HeroSection() {
           />
         ))}
       </div>
-
+        
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
