@@ -39,7 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Experience
     "experience.title": "Experiencia",
     "experience.yuppie.description": "Estuve involucrado en el desarrollo de múltiples proyectos de alto impacto incluyendo TodoBien POP (carrito de compras con gestión de estado y flujo de compra completo) y CEO MINDS (integración AWS S3, WebSockets para chat y notificaciones en tiempo real, y sistema de pagos de membresía).",
-    "experience.mexican.description": "Construí un CMS para campañas publicitarias desde cero. Responsable del ciclo completo de desarrollo de funcionalidades incluyendo procesos de QA, asegurando entregables de alta calidad alineados con objetivos de negocio.",
+    "experience.mexican.description": "Participe en el desarrollo de un CMS para campañas publicitarias desde cero. Responsable del ciclo completo de desarrollo de funcionalidades incluyendo procesos de QA, asegurando entregables de alta calidad alineados con objetivos de negocio.",
     "experience.blockchain.description": "Desarrollé un sistema de gestión de inventario con enfoque en experiencia de usuario y confiabilidad. Implementé pruebas E2E y UI comprehensivas con Cypress para asegurar funcionalidad robusta.",
 
     // Projects

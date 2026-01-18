@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
   {
     id: "mexican-company",
     title: "Full Stack Developer",
-    company: "Empresa Mexicana",
+    company: "Empresa de marketing digital",
     period: "Dec 2024 – May 2025",
     description:
       "Built a CMS for advertising campaigns from the ground up. Responsible for full feature development cycle including QA processes, ensuring high-quality deliverables aligned with business objectives.",

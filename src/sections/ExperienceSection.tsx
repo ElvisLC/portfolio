@@ -25,7 +25,7 @@ const experiences: ExperienceData[] = [
   {
     id: "mexican-company",
     title: "Full Stack Developer",
-    company: "Empresa Mexicana",
+    company: "Empresa de marketing digital",
     period: "Dic 2024 – May 2025",
     descriptionKey: "experience.mexican.description",
     technologies: ["React", "Supabase", "Tailwind CSS"],
