@@ -66,30 +66,28 @@ export function ProjectsSection() {
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
             className="glass glass-hover rounded-2xl p-6 group flex flex-col h-full"
           >
-            {/* Header */}
-            <div className="flex items-start justify-between mb-4">
-              <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                <Folder size={24} />
-              </div>
-              {project.liveUrl && (
-                <motion.a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1 }}
-                  className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={`${t("projects.viewProject")} ${project.title}`}
-                >
-                  <ExternalLink size={20} />
-                </motion.a>
-              )}
-            </div>
 
             {/* Content */}
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                {project.title}
-              </h3>
+              <div className="flex justify-between">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {project.title}
+                </h3>
+                {project.liveUrl && (
+                  <motion.a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="p-2 text-muted-foreground hover:text-primary transition-colors"
+                    aria-label={`${t("projects.viewProject")} ${project.title}`}
+                  >
+                    <ExternalLink size={20} />
+                  </motion.a>
+                )}
+
+              </div>
+
               <p className="text-sm text-primary/80 font-medium mb-3">
                 {project.role}
               </p>
