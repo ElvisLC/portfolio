@@ -6,6 +6,63 @@
 
 @layer base {
   :root {
+    /* Light Theme */
+    --background: 0 0% 98%;
+    --foreground: 230 45% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 45% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 45% 15%;
+
+    /* Accent - Mint Green #58ffca - adjusted for light mode */
+    --primary: 160 85% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 15% 92%;
+    --secondary-foreground: 230 45% 15%;
+
+    --muted: 230 15% 94%;
+    --muted-foreground: 230 20% 45%;
+
+    --accent: 160 85% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 88%;
+    --input: 230 15% 88%;
+    --ring: 160 85% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradient background - Light */
+    --gradient-bg: linear-gradient(
+      -30deg,
+      hsl(230 20% 98% / 1) 1%,
+      hsl(230 30% 96% / 1) 50%,
+      hsl(230 25% 97% / 1) 50%,
+      hsl(220 20% 97% / 1) 100%
+    );
+
+    /* Glow effects - Light */
+    --glow-accent: 0 0 40px hsl(160 85% 35% / 0.2);
+    --glow-accent-soft: 0 0 20px hsl(160 85% 35% / 0.1);
+
+    /* Sidebar - Light */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 230 45% 15%;
+    --sidebar-primary: 160 85% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 15% 92%;
+    --sidebar-accent-foreground: 230 45% 15%;
+    --sidebar-border: 230 15% 88%;
+    --sidebar-ring: 160 85% 35%;
+  }
+
+  .dark {
     /* Portfolio Dark Theme */
     --background: 230 45% 10%;
     --foreground: 0 0% 100%;
@@ -36,9 +93,7 @@
     --input: 230 25% 22%;
     --ring: 160 100% 67%;
 
-    --radius: 0.75rem;
-
-    /* Custom gradient background */
+    /* Custom gradient background - Dark */
     --gradient-bg: linear-gradient(
       -30deg,
       hsl(0 0% 13% / 0.995) 1%,
@@ -47,11 +102,11 @@
       hsl(223 30% 13% / 0.965) 100%
     );
 
-    /* Glow effects */
+    /* Glow effects - Dark */
     --glow-accent: 0 0 40px hsl(160 100% 67% / 0.3);
     --glow-accent-soft: 0 0 20px hsl(160 100% 67% / 0.15);
 
-    /* Sidebar - keeping for compatibility */
+    /* Sidebar - Dark */
     --sidebar-background: 230 45% 10%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 160 100% 67%;
