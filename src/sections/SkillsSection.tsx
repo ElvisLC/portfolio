@@ -11,7 +11,7 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     categoryKey: "skills.frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML/CSS"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS",  "HTML/CSS"],
   },
   {
     categoryKey: "skills.backend",
